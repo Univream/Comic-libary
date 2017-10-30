@@ -9,5 +9,10 @@ namespace ComicBookGallery.Models
     {
         public string Name { get; set; }
         public string Role { get; set; }
+
+        public override string ToString()
+        {
+            return Role + " : " + Name;
+        }
     }
 }
